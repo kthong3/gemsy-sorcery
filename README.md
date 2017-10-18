@@ -1,4 +1,10 @@
 # Gemsy Talk: 
+What is this Sorcery?
+A gem that is inspired by Restful Authentication, Authlogic and Devise.
+It has 
+
+One of the main goals:
+Keep MVC cleanly separated - DB is for models, sessions are for controllers. Models stay unaware of sessions.
 
 ## Core Features:
 - Login / logout
