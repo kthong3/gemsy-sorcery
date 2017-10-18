@@ -1,24 +1,43 @@
-# README
+# Gemsy Talk: 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## What is this Sorcery?
+A gem that is inspired by Restful Authentication, Authlogic and Devise.
 
-Things you may want to cover:
+One of the main goals:
+Keep MVC cleanly separated - DB is for models, sessions are for controllers. Models stay unaware of sessions.
 
-* Ruby version
+## Core Features:
+- Login / logout
+- optional return user to requested url on login
+- configurable redirect for non-logged-in users
+- Password encryption, algorithms: bcrypt (default)
+- Configurable stretches and salt
+- Configurable attribute names for username, password and email
+- Allow multiple fields to serve as username
 
-* System dependencies
+## Other Features by Module:
+User Activation:
+ - adds the ability to make the user activate his account via email
+ - configurable attribute names, configurable mailer
 
-* Configuration
+Reset Password
+- uses email verification, configurable mailer, configurable time between emails
 
-* Database creation
+Remember Me
+- configurable expiration, configurable attribute names
 
-* Database initialization
+Session Timeout
+- configurable session timeout, optionally session timeout will be calculated from last user action
 
-* How to run the test suite
+Brute Force Protection
+- brute force login protection, configurable logins before lock & lock duration
 
-* Services (job queues, cache servers, search engines, etc.)
+Basic HTTP Authenication
+- before action, automatic login, automatic login is disabled if session key changed
 
-* Deployment instructions
+Activity Logging
+- automatic logging of last login, last logout, last activity time and IP address for last login
 
-* ...
+External
+- OAuth1 & OAuth2 support (currently Twitter, Facebook, Github, Google, Heroku, LinkedIn)
+- helps you log in users from external auth providers
