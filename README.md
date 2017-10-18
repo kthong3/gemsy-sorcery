@@ -1,6 +1,6 @@
 # Gemsy Talk: 
 
-##Core:
+## Core Features:
 - Login / logout
 - optional return user to requested url on login
 - configurable redirect for non-logged-in users
